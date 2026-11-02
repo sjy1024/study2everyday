@@ -1,0 +1,45 @@
+# ===== Keil MDK 工程 =====
+# 必须提交: *.uvprojx / *.uvproj / *.uvoptx 视团队约定, 但 .uvoptx 常含个人调试配置, 建议忽略
+*.uvguix.*
+*.uvoptx
+*.uvopt
+Objects/
+Listings/
+DebugConfig/
+RTE/_*/ 
+# RTE 里 RTE_Components.h 常需提交, 若团队需要请把上面这行删掉
+
+# ===== 编译产物 =====
+*.o
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.crf
+*.dep
+*.lnp
+*.htm
+*.sct
+*.iex
+
+# ===== LVGL 生成/中间文件 =====
+lvgl/lv_conf.h.bak
+*.bak
+*.orig
+*.rej
+
+# ===== 系统/编辑器 =====
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# ===== 日志/临时 =====
+*.log
+build/
+cmake-build-*/
